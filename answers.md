@@ -20,6 +20,8 @@ I passed in a path that redirected to the individual trainer's page. This path n
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
 
+First, every time a pokemon is created, a message is added to the flash array if and error appears when saving the pokemon. Then every time the page is rendered, application.html.erb calls the _messages.html.erb file. In the messages file, the loop goes through the flash array and searchs each message in that array. If a message exists, an alert box is created notifying the user of the error.
+
 # Give us feedback on the project and decal below!
 
 # Extra credit: Link your Heroku deployed app
