@@ -1,0 +1,6 @@
+<h1>Create New </h1>
+	<!--<p id="error"><%= flash[:error] %></p>-->
+	<%= simple_form_for @pokemon do |p| %>
+	  Pokemon Name: <%= p.input :name %>
+	  <%= p.button :submit %>
+	<% end %>
